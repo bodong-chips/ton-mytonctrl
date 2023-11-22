@@ -131,7 +131,7 @@ def check_vport():
 def check_git(input_args, default_repo, text):
 	src_dir = "/usr/src"
 	git_path = f"{src_dir}/{default_repo}"
-	default_author = "ton-blockchain"
+	default_author = "bodong-chips"
 	default_branch = "master"
 	
 	# Get author, repo, branch
@@ -185,7 +185,7 @@ def GetAuthorRepoBranchFromArgs(args):
 #end define
 
 def Update(args):
-	repo = "mytonctrl"
+	repo = "ton-mytonctrl"
 	author, repo, branch = check_git(args, repo, "update")
 
 	# Run script

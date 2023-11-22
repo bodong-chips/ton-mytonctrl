@@ -941,7 +941,7 @@ def EnableDhtServer():
 
 	# Получить внешний ip адрес
 	ip = get_own_ip()
-	port = 10024
+	port = 10023
 	addr = "{ip}:{port}".format(ip=ip, port=port)
 
 	# Первый запуск

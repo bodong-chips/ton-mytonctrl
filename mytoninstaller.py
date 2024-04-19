@@ -24,8 +24,8 @@ def Init():
 	user = os.environ.get("USER", "root")
 	local.buffer.user = user
 	local.buffer.vuser = "validator"
-	local.buffer.cport = 10020
-	local.buffer.lport = 10021
+	local.buffer.cport = 10030
+	local.buffer.lport = 10031
 
 	# Create user console
 	console.name = "MyTonInstaller"
@@ -285,7 +285,7 @@ def FirstNodeSettings():
 
 	# Получить внешний ip адрес
 	ip = get_own_ip()
-	vport = 10022
+	vport = 10032
 	addr = "{ip}:{vport}".format(ip=ip, vport=vport)
 	local.add_log("Use addr: " + addr, "debug")
 
@@ -941,7 +941,7 @@ def EnableDhtServer():
 
 	# Получить внешний ip адрес
 	ip = get_own_ip()
-	port = 10023
+	port = 10033
 	addr = "{ip}:{port}".format(ip=ip, port=port)
 
 	# Первый запуск
